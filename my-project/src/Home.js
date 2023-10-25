@@ -122,11 +122,13 @@ export default function Example() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+              KiseTaqa 
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Welcome.
+
+              <img src = "https://media.discordapp.net/attachments/1091296534370471997/1161619186431295518/image.png?ex=654b6a2b&is=6538f52b&hm=12dcb6282ad9fd79fd48bc6df2b39aa08116dd0ab8265fa067a0be9e9df61fff&=&width=1060&height=662" />
+              
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -135,7 +137,7 @@ export default function Example() {
               >
                 Get started
               </a>
-              <a href="Navbar" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="https://tailwindcss.com/docs/guides/create-react-app" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

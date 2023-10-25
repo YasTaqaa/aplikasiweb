@@ -22,10 +22,20 @@ const products = [
     {
       id: 1,
       name: 'Basic Tee',
-      href: '#',
+      href: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
+      color: 'Black',
+    },
+
+    {
+      id: 1,
+      name: 'Celana Training',
+      href: 'https://halalpedia.oss-ap-southeast-5.aliyuncs.com/2021/03/20210322145005-60584c2d09ef1-whatsappimage2021-03-22at00.46.49.jpeg',
+      imageSrc: 'https://halalpedia.oss-ap-southeast-5.aliyuncs.com/2021/03/20210322145005-60584c2d09ef1-whatsappimage2021-03-22at00.46.49.jpeg',
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: '$50',
       color: 'Black',
     },
     // More products...
