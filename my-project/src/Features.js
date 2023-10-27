@@ -1,41 +1,25 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 import Navbar from './Navbar';
 
-const features = [
-  {
-    name: 'Push to deploy.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
-  },
-]
+const features = []
 
 export default function Example() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-white">
 
         <Navbar />
         
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
+              
+              <p className="mt-1 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">Aslinya BADASSS</p>
+              <p className="mt-3 text-lg leading-8 text-gray-600">
+                Jalan Pake Kaki
+              </p>
+              <p>
+                <img src="https://media.discordapp.net/attachments/1077839624099086366/1167261368328658994/FB_IMG_1698042411162.jpg?ex=654d7bdc&is=653b06dc&hm=ef8f1f3a09d31ec59b6918c79b4bda520bf808e372eb68387db1c9ded6e4b42d&=&width=657&height=662"  height={300} width={200}/>
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -50,13 +34,9 @@ export default function Example() {
               </dl>
             </div>
           </div>
-          <img
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-            alt="Product screenshot"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            width={2432}
-            height={1442}
-          />
+          <p>             
+            <img src="https://media.discordapp.net/attachments/1077839624099086366/1166926045526630400/jing_liu.png?ex=654c4391&is=6539ce91&hm=139fe4b709d4c5e9f4230a3b7cf638877876e5b96ba690b0bdd6f200fb0e70f9&=&width=1061&height=662" height={500} width={1000}/>
+          </p>
         </div>
       </div>
     </div>
