@@ -1,114 +1,73 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-
-
-
 
 import Navbar from './Navbar';
 
 const products = [
     {
       id: 1,
-      name: 'Basic Tee',
-      href: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
+      name: 'Miss Pink Elf',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171407232143990844/239464191_967121987184211_4418895927230597863_n.jpg?ex=655c90ff&is=654a1bff&hm=8a64cd122dd4be1fcf0283aef8b581eaf1447395ee19a97c32ea713ccffd5288&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171407232143990844/239464191_967121987184211_4418895927230597863_n.jpg?ex=655c90ff&is=654a1bff&hm=8a64cd122dd4be1fcf0283aef8b581eaf1447395ee19a97c32ea713ccffd5288&',
     },
 
     {
       id: 1,
-      name: 'Celana Training',
-      href: 'https://halalpedia.oss-ap-southeast-5.aliyuncs.com/2021/03/20210322145005-60584c2d09ef1-whatsappimage2021-03-22at00.46.49.jpeg',
-      imageSrc: 'https://halalpedia.oss-ap-southeast-5.aliyuncs.com/2021/03/20210322145005-60584c2d09ef1-whatsappimage2021-03-22at00.46.49.jpeg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$50',
-      color: 'Grey',
+      name: 'Lunar Vow: Crimson Love',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171403405416210553/398985952_778275644311362_4422734695275754137_n.jpg?ex=655c8d6f&is=654a186f&hm=340e50c35263193c184ce74af8b201f431c369f9b49e5ad5e244fa87053ba9c0&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171403405416210553/398985952_778275644311362_4422734695275754137_n.jpg?ex=655c8d6f&is=654a186f&hm=340e50c35263193c184ce74af8b201f431c369f9b49e5ad5e244fa87053ba9c0&',
     },
 
     {
       id: 1,
-      name: 'Topi Polos',
-      href: 'https://s2.bukalapak.com/img/2130450542/w-1000/Topi_hitam_polos.jpg',
-      imageSrc: 'https://s2.bukalapak.com/img/2130450542/w-1000/Topi_hitam_polos.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$30',
-      color: 'Black',
+      name: 'Elysia Herrscher of Human Ego',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171401279172517942/O1CN01oJItU31fEb9LJ7Da2__3249253975_a7eb411c-f6d9-4f6e-ba0e-701ae2867fe1.webp?ex=655c8b74&is=654a1674&hm=5d237771eaffa0a81dc97a27a13085520676347cedb9f806a929b1e462a86594&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171401279172517942/O1CN01oJItU31fEb9LJ7Da2__3249253975_a7eb411c-f6d9-4f6e-ba0e-701ae2867fe1.webp?ex=655c8b74&is=654a1674&hm=5d237771eaffa0a81dc97a27a13085520676347cedb9f806a929b1e462a86594&',
     },
 
     {
       id: 1,
-      name: 'Jaket Polos',
-      href: 'https://s4.bukalapak.com/img/4204024082/w-1000/Jaket_Polos_Hoodie_Zipper_HITAM_baru.jpg',
-      imageSrc: 'https://s4.bukalapak.com/img/4204024082/w-1000/Jaket_Polos_Hoodie_Zipper_HITAM_baru.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$100',
-      color: 'Black',
+      name: 'Raiden Mei Herrscher of Origin',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171409907354976326/Fm_VZgeaAAIYB3R.jpg?ex=655c937d&is=654a1e7d&hm=e2cddbb97a6a82a6ee1f08a8c81fc0d67cb5462eb788d59c7d4c85edc81519f0&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171409907354976326/Fm_VZgeaAAIYB3R.jpg?ex=655c937d&is=654a1e7d&hm=e2cddbb97a6a82a6ee1f08a8c81fc0d67cb5462eb788d59c7d4c85edc81519f0&',
     },
 
     {
       id: 1,
-      name: 'Kemeja Polos',
-      href: 'https://i2.wp.com/s2.bukalapak.com/img/2653034663/w-1000/Kemeja_Lengan_Panjang_Pria_Slim_Fit_Formal_Polos_Casual_Cowo.jpeg',
-      imageSrc: 'https://i2.wp.com/s2.bukalapak.com/img/2653034663/w-1000/Kemeja_Lengan_Panjang_Pria_Slim_Fit_Formal_Polos_Casual_Cowo.jpeg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$20',
-      color: 'Black',
+      name: 'Kiana Herrscher of Finality',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171410322721095690/0e766e5098b10610d85c12041b9d59fd_8787942535884375101.webp?ex=655c93e0&is=654a1ee0&hm=908d011983e662be92fe1f130b491dc72eb04804a637811edeb0091fbe82d7ff&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171410322721095690/0e766e5098b10610d85c12041b9d59fd_8787942535884375101.webp?ex=655c93e0&is=654a1ee0&hm=908d011983e662be92fe1f130b491dc72eb04804a637811edeb0091fbe82d7ff&',
     },
 
     {
       id: 1,
-      name: 'Celana Pendek Boxer',
-      href: 'https://s1.bukalapak.com/img/12971872421/w-1000/Celana_Kolor_Boxer_jumbo.jpg',
-      imageSrc: 'https://s1.bukalapak.com/img/12971872421/w-1000/Celana_Kolor_Boxer_jumbo.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$10',
-      color: 'Orange',
+      name: 'Bronya Herrscher of Truth',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171411087397232670/Herrscher.of.Truth.full.3856237.jpg?ex=655c9497&is=654a1f97&hm=4851f19cb2f52ff3773cb43e21bfaa56ba13f59b6354dcc5f02ccdde5168ca46&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171411087397232670/Herrscher.of.Truth.full.3856237.jpg?ex=655c9497&is=654a1f97&hm=4851f19cb2f52ff3773cb43e21bfaa56ba13f59b6354dcc5f02ccdde5168ca46&', 
     },
 
     {
       id: 1,
-      name: 'Celana Jeans Hitam',
-      href: 'https://cardinal.co.id/wp-content/uploads/2019/10/CBCBP00036K-01A_1NEW.jpg',
-      imageSrc: 'https://cardinal.co.id/wp-content/uploads/2019/10/CBCBP00036K-01A_1NEW.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$50',
-      color: 'Black',
+      name: 'Seele Herrscher of Rebirth',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171412764313534464/fab5089c2701d12008e27c13d86c8e5f_8074877247238527391.webp?ex=655c9626&is=654a2126&hm=ffc8da8b7c73e29809a227f14141422ed1159a82c47c8c030b8e53a602a0c74d&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171412764313534464/fab5089c2701d12008e27c13d86c8e5f_8074877247238527391.webp?ex=655c9626&is=654a2126&hm=ffc8da8b7c73e29809a227f14141422ed1159a82c47c8c030b8e53a602a0c74d&',
     },
 
     {
       id: 1,
-      name: 'Crewneck Hitam',
-      href: 'https://www.justsweatshirts.com/assets/images/CrewNeck_Black-02.jpg',
-      imageSrc: 'https://www.justsweatshirts.com/assets/images/CrewNeck_Black-02.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$40',
-      color: 'Black',
+      name: 'Bronya Silver Wing',
+      href: 'https://cdn.discordapp.com/attachments/935856252494417982/1171411606727557161/a0258248276c75097eb0127a75e9669b.jpeg?ex=655c9512&is=654a2012&hm=18bbd222a0cc4539b02e2be53efda809ec4dde73022e7357d3aa3c33c8963350&',
+      imageSrc: 'https://cdn.discordapp.com/attachments/935856252494417982/1171411606727557161/a0258248276c75097eb0127a75e9669b.jpeg?ex=655c9512&is=654a2012&hm=18bbd222a0cc4539b02e2be53efda809ec4dde73022e7357d3aa3c33c8963350&',
     },
-    // More products...
+    
   ]
   
   export default function Example() {
     return (
-      <div className="bg-white">
+      <div className="bg-gradient-to-r from-pink-300 to-white">
 
         <Navbar />
         
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900">Silahkan dipilih :</h2>
+        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 font-serif">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900">Character Pictures :</h2>
   
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
@@ -130,7 +89,7 @@ const products = [
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                   </div>
-                  <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                  
                 </div>
               </div>
             ))}

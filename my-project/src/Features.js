@@ -1,44 +1,43 @@
 
 import Navbar from './Navbar';
 
-const features = []
+
 
 export default function Example() {
-  return (
-    <div className="overflow-hidden bg-white">
-
+    return (
+     
+      <div className='overflow hidden' class='bg-gradient-to-r from-pink-300 to-white'>
         <Navbar />
-        
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
-            <div className="lg:max-w-lg">
-              
-              <p className="mt-1 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">Aslinya BADASSS</p>
-              <p className="mt-3 text-lg leading-8 text-gray-600">
-                Jalan Pake Kaki
-              </p>
-              <p>
-                <img src="https://media.discordapp.net/attachments/1077839624099086366/1167261368328658994/FB_IMG_1698042411162.jpg?ex=654d7bdc&is=653b06dc&hm=ef8f1f3a09d31ec59b6918c79b4bda520bf808e372eb68387db1c9ded6e4b42d&=&width=657&height=662"  height={300} width={200}/>
-              </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
+        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 lg:px-8 font-serif">Trailer Battlesuit Honkai Impact :</h2>
+        <div className="mt-2 grid grid-cols-3 gap-x-6 gap-y-10 lg:px-8">
+        <div class='video-container'>
+            <div class='video'>
+                 <iframe width="325" height="225" src="https://www.youtube.com/embed/MtwcF68spyU?si=D0AgYcn-4UQkRrRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
             </div>
-          </div>
-          <p>             
-            <img src="https://media.discordapp.net/attachments/1077839624099086366/1166926045526630400/jing_liu.png?ex=654c4391&is=6539ce91&hm=139fe4b709d4c5e9f4230a3b7cf638877876e5b96ba690b0bdd6f200fb0e70f9&=&width=1061&height=662" height={500} width={1000}/>
-          </p>
+            <div class='video mt-2'>
+                 <iframe width="325" height="225" src="https://www.youtube.com/embed/V_2OES-CNb0?si=T-CSsW5Fd6Tdngxa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
+            </div>
+        </div>
+        <div class='video-container'>
+            <div class='video'>
+                <iframe width="325" height="225" src="https://www.youtube.com/embed/F5U4E-1Jn5Y?si=9tugn98qZD4yc17l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
+            </div>
+            <div class='video mt-2'>
+                <iframe width="325" height="225" src="https://www.youtube.com/embed/msQY8x5q174?si=bqr72Nnyu7Eca_fV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
+            </div>
+        </div>
+        <div class='video-container'>
+            <div class='video'>
+                <iframe width="325" height="225" src="https://www.youtube.com/embed/oQBq4PFMx0A?si=q29my0KtaFSkf_Eu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
+            </div>
+            <div class='video mt-2'>
+                <iframe width="325" height="225" src="https://www.youtube.com/embed/E606Ez4X5_g?si=KAfIWwyJVCNG5Wxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" Allow="fullscreen"></iframe>
+            </div>
+        </div>
+        </div>
         </div>
       </div>
-    </div>
-  )
-}
+    )
+  }
+  

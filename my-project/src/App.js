@@ -5,6 +5,8 @@ const Home = lazy(() => import('./Home'));
 const Product = lazy(() => import('./Product'));
 const Features = lazy(() => import('./Features'));
 const Navbar = lazy(() => import('./Navbar'));
+const Video = lazy(() => import('./video'));
+const Profil = lazy(() => import('./profil'));
 
 const App = () => (
 
@@ -15,6 +17,8 @@ const App = () => (
         <Route path="/Product" element={<Product />} />
         <Route path="/Features" element={<Features />} />
         <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/video" element={<Video />} />
+        <Route path="/profil" element={<Profil />} />
         </Routes>
       </Suspense>
     </Router>
